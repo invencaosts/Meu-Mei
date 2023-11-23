@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf7e9;
+   }
+   
+   header .btn-header {
+    background-color: #fbf7e9;
+    padding: 20px;
+    color: #05141b;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+   }
+
+   
+   header button {
+    background-color: #fbf7e9;
+    color: #05141b;
+    padding: 8px 16px;
+    border: none;
+    margin-left: 10px;
+   }
+   
+   .div-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+   }
+   
+   h1 {
+    margin-bottom: 20px;
+    color: #05141b;
+   }
+   
+   p {
+    margin-bottom: 30px;
+    text-align: center;
+   }
+   
+   .div-form {
+    width: 100%;
+    max-width: 600px;
+   }
+   
+   .input-group-informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+   }
+   
+   .input-group-informacoes input {
+    width: 30%;
+    padding: 8px;
+    margin-right: 5px;
+    box-sizing: border-box;
+   }
+   
+   .input-group-comercio, .input-group-industria, .input-group-servico {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+   }
+   
+   .input-group-comercio input, .input-group-industria input, .input-group-servico input {
+    width: 30%;
+    padding: 8px;
+    margin-right: 5px;
+    box-sizing: border-box;
+   }
+   
+   .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   }
+   
+   .btn-group button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+   }
+   
+   .h1-comercio, .h1-industria, .h1-servico {
+    color: #05141b;
+    line-height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+   }
