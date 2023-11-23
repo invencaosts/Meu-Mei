@@ -16,9 +16,8 @@ Meu Mei é um site criado por alunos do SENAI-SE na unidade CETCC, para a conclu
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
-- JavaScript
-- ASP.NET Core (MVC)
-- SQLServer
+- PHP
+- MySql
 - Git e Github
 - Figma
 
