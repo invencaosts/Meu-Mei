@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../src/images/logoIcon.png" />
-    <title>Cadastro - Meu Mei</title>
+    <title>Login - Meu Mei</title>
 
     <!-- Linkando Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +15,7 @@
 
     <!-- Linkando CSS -->
     <link rel="stylesheet" href="../style/cabecalho.css" />
-    <link rel="stylesheet" href="../style/paginaCadastro.css" />
+    <link rel="stylesheet" href="../style/paginaLogin.css" />
 
     <!-- Linkando Bootstrap -->
     <link
@@ -56,25 +55,9 @@
     <form action="" method="post">
       <div class="formulario">
         <div class="textoFormulario">
-          <label for="textoFormulario" id="textoFormulario"
-            >Se cadastre e tenha dias com menos estresse</label
-          >
-        </div>
-        <div class="mb-3">
-          <input
-            type="text"
-            class="inputFormulario"
-            id="inputNomeDaEmpresa"
-            placeholder="Nome da Empresa"
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            type="text"
-            class="inputFormulario"
-            id="inputEmail"
-            placeholder="E-mail"
-          />
+          <label for="textoFormulario" id="textoFormulario">
+            Faça login na sua conta Meu Mei
+          </label>
         </div>
         <div class="mb-3">
           <input
@@ -92,14 +75,10 @@
             placeholder="Senha"
           />
         </div>
-        <label for="textoCadastro" id="textoCadastro">
-          Ao se inscrever, você concorda com nossos
-          <a href="#">Termos de Uso e com a Política de Privacidade</a>
-        </label>
-        <button type="submit" id="botaoFormulario">CADASTRE-SE</button>
+        <button type="submit" id="botaoFormulario">ENTRAR</button>
         <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
         <label for="linkLogin" id="linkLogin">
-          Já tem uma conta? <a href="paginaLogin.html">Faça Login!</a>
+          Ainda não tem uma conta? <a href="paginaCadastro.html">Faça o Cadastro!</a>
         </label>
       </div>
     </form>
