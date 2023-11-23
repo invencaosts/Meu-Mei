@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/images/logoIcon.png" />
     <title>Cadastro - Meu Mei</title>
 
     <!-- Linkando Fonte -->
@@ -14,7 +15,7 @@
     />
 
     <!-- Linkando CSS -->
-    <link rel="stylesheet" href="../style/cabecalho.css">
+    <link rel="stylesheet" href="../style/cabecalho.css" />
     <link rel="stylesheet" href="../style/paginaCadastro.css" />
 
     <!-- Linkando Bootstrap -->
@@ -34,48 +35,74 @@
 
   <body class="body">
     <!-- Cabeçalho - Início -->
-    <header class="cabecalho">
-      <div class="logo">
-        <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
-      </div>
-      <div class="botoesCabecalho">
-        <button type="submit" class="botoesCabecalhoDois" id="botaoLogin">
-          LOGIN
-        </button>
-        <button type="submit" class="botoesCabecalhoDois" id="botaoCadastro">
-          CADASTRO
-        </button>
+    <header class="fixarCabecalho">
+      <div class="cabecalho">
+        <div class="logo">
+          <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
+        </div>
+        <div class="botoesCabecalho">
+          <button type="submit" class="botoesCabecalhoDois" id="botaoLogin">
+            LOGIN
+          </button>
+          <button type="submit" class="botoesCabecalhoDois" id="botaoCadastro">
+            CADASTRO
+          </button>
+        </div>
       </div>
     </header>
     <!-- Cabeçalho - Fim -->
-    
+
     <!-- Início Formulário -->
     <form action="" method="post">
-        <div class="formulario">
-            <div class="textoFormulario">
-                <label for="textoFormulario" id="textoFormulario">Se cadastre e tenha dias com menos estresse</label>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="inputFormulario" id="inputNomeDaEmpresa" placeholder="Nome da Empresa">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="inputFormulario" id="inputEmail" placeholder="E-mail">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="inputFormulario" id="inputCnpj" placeholder="CNPJ">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="inputFormulario" id="inputSenha" placeholder="Senha">
-            </div>
-            <label for="textoCadastro" id="textoCadastro">
-                Ao se inscrever, você concorda com nossos <a href="#">Termos de Uso e com a Política de Privacidade</a>
-            </label>
-            <button type="submit" id="botaoFormulario">CADASTRE-SE</button>
-            <img id="barraFormulario" src="../src/images/Line 1.svg" alt="">
-            <label for="linkLogin" id="linkLogin">
-                Já tem uma conta? <a href="#">Faça Login!</a>
-            </label>
+      <div class="formulario">
+        <div class="textoFormulario">
+          <label for="textoFormulario" id="textoFormulario"
+            >Se cadastre e tenha dias com menos estresse</label
+          >
         </div>
-    </form>  
+        <div class="mb-3">
+          <input
+            type="text"
+            class="inputFormulario"
+            id="inputNomeDaEmpresa"
+            placeholder="Nome da Empresa"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="inputFormulario"
+            id="inputEmail"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="inputFormulario"
+            id="inputCnpj"
+            placeholder="CNPJ"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="inputFormulario"
+            id="inputSenha"
+            placeholder="Senha"
+          />
+        </div>
+        <label for="textoCadastro" id="textoCadastro">
+          Ao se inscrever, você concorda com nossos
+          <a href="#">Termos de Uso e com a Política de Privacidade</a>
+        </label>
+        <button type="submit" id="botaoFormulario">CADASTRE-SE</button>
+        <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
+        <label for="linkLogin" id="linkLogin">
+          Já tem uma conta? <a href="#">Faça Login!</a>
+        </label>
+      </div>
+    </form>
+    <!-- Final Formulário -->
   </body>
 </html>
