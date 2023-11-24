@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    background-color: #FBF7E9;
+    position: relative;
+}
+
+.home{
+    position: absolute;
+
+    top: 800px;
+}
+
+.separadores2{
+    align-items: center;
+    display: flex;
+
+    top: -50%;
+    left: 50%;
+    transform: translate(20%, -1150%);
+}
+
+#rmrb{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.line2{
+    width: 400px;
+    height: 3px;
+}
