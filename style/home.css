@@ -10,13 +10,13 @@
     position: relative;
 }
 
-.home{
+.principal{
     position: absolute;
 
     top: 800px;
 }
 
-.separadores2{
+.separadores-individual{
     align-items: center;
     display: flex;
 
@@ -35,7 +35,12 @@
     margin-top: 15px;
 }
 
-.line2{
+.line1{
     width: 400px;
+    height: 3px;
+}
+
+.line2{
+    width: 578px;
     height: 3px;
 }
