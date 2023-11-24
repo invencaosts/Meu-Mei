@@ -20,8 +20,7 @@
     align-items: center;
     display: flex;
 
-    top: -50%;
-    left: 50%;
+    
     transform: translate(20%, -1150%);
 }
 
@@ -43,4 +42,29 @@
 .line2{
     width: 578px;
     height: 3px;
+}
+
+.campo-consulta{
+    display: flex;
+    transform: translate(40%, -865%);
+    
+}
+
+.campo-relatorios{
+    display: flex;
+}
+
+.texto-relatorio{
+margin-left: 50px;
+
+}
+
+
+.botao-individual{
+    background-color: #05141B;
+    border: 2px solid #05141B;
+
+    color: #FBF7E9;
+    font-family: 'Orbitron', sans-serif;
+    padding: 5px;
 }
