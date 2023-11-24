@@ -59,3 +59,49 @@
 #slide2:checked ~ .s1{
     margin-left: -20%;
 }
+
+@media(min-width: 2500px){
+    .carrossel{
+        margin-top: 50px;
+        width: 2000px;
+        left: 15%;
+        transform: translate(15%);
+    }
+
+    .navigation{
+        left: 40%;
+        transform: translate(40%);
+    }
+
+    .bar{
+        width: 100px;
+        border: 2px solid #fff;
+    }
+    
+    .bar:hover{
+        background-color: #fff;
+    }
+}
+
+@media(min-width: 1900px){
+    .carrossel{
+        margin-top: 50px;
+        width: 1500px;
+        left: 15%;
+        transform: translate(15%);
+    }
+
+    .navigation{
+        left: 37%;
+        transform: translate(37%);
+    }
+
+    .bar{
+        width: 100px;
+        border: 2px solid #fff;
+    }
+    
+    .bar:hover{
+        background-color: #fff;
+    }
+}

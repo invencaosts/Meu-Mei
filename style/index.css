@@ -9,10 +9,6 @@
     background-color: #FBF7E9;
 }
 
-main{
-    position: absolute;
-}
-
 .engloba{
     display: flex;
 }
@@ -42,4 +38,34 @@ main{
     margin-top: 100px;
     margin-left: 100px;
     width: 450px;
+}
+
+/* Responsividade */
+
+@media(min-width: 2500px){
+    .texto{
+        width: 1500px;
+    }
+
+    .chamadaTexto{
+        font-size: 50px;
+    }
+
+    .logoGrande{
+        width: 800px;
+    }
+}
+
+@media(min-width: 1900px){
+    .texto{
+        width: 800px;
+    }
+
+    .chamadaTexto{
+        font-size: 20px;
+    }
+
+    .logoGrande{
+        width: 900px;
+    }
 }
