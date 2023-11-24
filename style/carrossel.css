@@ -83,7 +83,7 @@
     }
 }
 
-@media(min-width: 1900px){
+@media(max-width: 1920px){
     .carrossel{
         margin-top: 50px;
         width: 1500px;
