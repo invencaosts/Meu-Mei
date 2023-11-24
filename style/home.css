@@ -45,8 +45,19 @@
 }
 
 .campo-consulta{
-    display: flex;
-    transform: translate(40%, -865%);
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#campo-consulta1{
+    
+    transform: translate(20%, -865%);
+}
+
+#campo-consulta2{
+    transform: translate(20%, -865%);
     
 }
 
@@ -59,6 +70,13 @@ margin-left: 50px;
 
 }
 
+.campo-botao{
+    margin-left: 300px;
+}
+
+.campo-botao1{
+    margin-left: 659px;
+}
 
 .botao-individual{
     background-color: #05141B;
