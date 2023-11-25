@@ -71,3 +71,11 @@
 }
 
 /* Cabeçalho CSS - Fim */
+
+@media(max-width: 450px){
+    .botoesCabecalhoDois{
+        width: 80px;
+
+        font-size: 10px;
+    }
+}
