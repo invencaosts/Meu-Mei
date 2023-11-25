@@ -20,8 +20,9 @@
     align-items: center;
     display: flex;
 
-    
-    transform: translate(20%, -1150%);
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
 }
 
 #rmrb{
@@ -66,7 +67,7 @@
 }
 
 .texto-relatorio{
-margin-left: 50px;
+    margin-left: 50px;
 
 }
 
@@ -89,10 +90,34 @@ margin-left: 50px;
 
 @media(max-width: 450px){
     .line1{
-        width: 300px;
+        width: 35px;
     }
 
     .line2{
-        width: 400px;
+        width: 125px;
+    }
+
+    .separadores-individual{
+        transform: translate(3%, -1500%);
+    }
+    
+    #rmrb{
+        font-size: 10px;
+    }
+
+    #campo-consulta1{
+    
+        transform: translate(0%, -865%);
+    }
+    
+    #campo-consulta2{
+        transform: translate(0%, -865%);
+        
+    }
+
+    .botao-individual{
+        width: 90px;
+
+        font-size: 10px;
     }
 }

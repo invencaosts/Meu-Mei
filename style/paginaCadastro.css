@@ -16,12 +16,10 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, calc(50% - 80px));
-    width: 400px;
 }
 
 .formulario{
     width: 400px;
-    height: 525px;
 
     text-align: center;
 }
