@@ -69,3 +69,15 @@
         width: 900px;
     }
 }
+
+@media(max-width: 450px){
+    .texto{
+        width: 350px;
+    }
+    .chamadaTexto{
+        font-size: 10px;
+    }
+    .logoGrande{
+        display: none;
+    }
+}
