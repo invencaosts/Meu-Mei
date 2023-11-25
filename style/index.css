@@ -72,9 +72,10 @@
 
 @media(max-width: 450px){
     .texto{
-        width: 350px;
+        width: 395px;
 
         margin-top: 10px;
+        margin-left: 15px;
     }
     .chamadaTexto{
         font-size: 10px;
