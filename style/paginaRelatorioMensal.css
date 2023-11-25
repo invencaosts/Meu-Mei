@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    background-color: #FBF7E9;
+    
+}
+.separadores{
+    text-align: center;
+}
+
+.separadores-individual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.line1{
+    width: 400px;
+    height: 3px;
+}
+
+#rmrb{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
