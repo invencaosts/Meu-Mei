@@ -16,7 +16,6 @@
     <!-- Linkando CSS -->
     <link rel="stylesheet" href="../style/cabecalho.css" />
     <link rel="stylesheet" href="../style/paginaLogin.css" />    
-    <link rel="stylesheet" href="../style/responsividade.css">
 
     <!-- Linkando Bootstrap -->
     <link
@@ -55,36 +54,39 @@
     <!-- Cabeçalho - Fim -->
 
     <!-- Início Formulário -->
-    <form action="" method="post">
-      <div class="formulario">
-        <div class="textoFormulario">
-          <label for="textoFormulario" id="textoFormulario">
-            Faça login na sua conta Meu Mei
-          </label>
-        </div>
-        <div class="mb-3">
-          <input
-            type="text"
-            class="inputFormulario"
-            id="inputCnpj"
-            placeholder="CNPJ"
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            type="password"
-            class="inputFormulario"
-            id="inputSenha"
-            placeholder="Senha"
-          />
-        </div>
-        <button type="submit" id="botaoFormulario">ENTRAR</button>
-        <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
-        <label for="linkLogin" id="linkLogin">
-          Ainda não tem uma conta? <a href="paginaCadastro.html">Faça o Cadastro!</a>
-        </label>
-      </div>
-    </form>
+    <div class="carai">
+        <form action="" method="post">
+            <div class="formulario">
+              <div class="textoFormulario">
+                <p id="textoFormulario">
+                    Faça login na sua conta Meu Mei
+                </p>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="inputFormulario"
+                  id="inputCnpj"
+                  placeholder="CNPJ"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="inputFormulario"
+                  id="inputSenha"
+                  placeholder="Senha"
+                />
+              </div>
+              <button type="submit" id="botaoFormulario">ENTRAR</button>
+              <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
+              <p id="linkLogin">
+                Ainda não tem uma conta? <a href="paginaCadastro.html">Faça o Cadastro!</a>
+              </p>
+            </div>
+          </form>
+      
+    </div>
     <!-- Final Formulário -->
   </body>
 </html>

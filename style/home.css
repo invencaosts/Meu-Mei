@@ -86,3 +86,13 @@ margin-left: 50px;
     font-family: 'Orbitron', sans-serif;
     padding: 5px;
 }
+
+@media(max-width: 450px){
+    .line1{
+        width: 300px;
+    }
+
+    .line2{
+        width: 400px;
+    }
+}
