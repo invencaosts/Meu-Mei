@@ -25,16 +25,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
 
 .line1 {
-    width: 400px;
+    width: 600px;
     height: 3px;
 }
 
 .line2 {
-    width: 410px;
+    width: 300px;
     height: 3px;
 }
 
@@ -43,9 +42,41 @@
     font-weight: bold;
     font-size: 20px;
 
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-top: 15px;
+}
+
+.textoFormulario{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.campo-inputs{
+    display: flex;
+    justify-content: center;
+    width: 974px;
+    height: 100px;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.campo-inputs input {
+    width: 48.95%;
+    text-align: center;
+}
+
+.campo-inputs input:nth-child(3) {
+    width: 100%;
+}
+
+div.row{
+    margin-left: 90px;
+    width: 1100px;
+    padding: 10px;
 }
 
 .inputFormulario {
@@ -68,46 +99,19 @@
     color: #FBF7E9;
 }
 
-.campo-inputs {
-    display: flex;
-    justify-content: center;
-    width: 960px;
-    gap: 20px;
-    flex-wrap: wrap;
-    
-
-}
-
-.campo-inputs input {
-    text-align: center;
-}
-
-.inputs-receita {
-    height: 100px;
-    width: 50%;
-    
-}
-
-.inputs-receita input {
-    width: 48.95%;
-    
-}
-
-.inputs-receita input:nth-child(3) {
-    width: 100%;
-}
-
 .group-button{
     display: flex;
-    gap: 105px;
-    margin-right: 10px;
+    gap: 113px;
+    margin-right: 23px;
     margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #botaoConfirmar{
     width: 250px;
     height: 45px;
-
     border-radius: 10px;
     border: none;
 
@@ -118,7 +122,6 @@
 
     margin-top: 12px;
     margin-left: 8px;
-
     text-align: center;
     display: flex;
     justify-content: center;
@@ -138,7 +141,6 @@
     font-family: 'Orbitron', sans-serif;
 
     margin-top: 12px;
-
     text-align: center;
     display: flex;
     justify-content: center;
@@ -158,9 +160,9 @@
     font-family: 'Orbitron', sans-serif;
 
     margin-top: 12px;
-
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
