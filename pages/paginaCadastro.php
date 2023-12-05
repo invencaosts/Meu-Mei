@@ -2,6 +2,43 @@
 
 include("../config/conexao.php");
 
+if(isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj"]) || isset($_POST["senha"])) {
+  if(strlen($_POST["nomeCompleto"]) == 0) {
+    echo "Informe o nome da empresa";
+  } else if(strlen($_POST["email"]) == 0) {
+    echo "Informe seu E-mail";
+  } else if(strlen($_POST["cnpj"]) == 0) {
+    echo "Informe seu CNPJ";
+  } else if(strlen($_POST["senha"]) == 0) {
+    echo "Informe sua senha";
+  } else {
+
+    $nomeEmpresa = $mysqli->real_escape_string($_POST["nomeCompleto"]);
+    $email = $mysqli->real_escape_string($_POST["email"]);
+    $cnpj = $mysqli->real_escape_string($_POST["cnpj"]);
+    $senha = $mysqli->real_escape_string($_POST["senha"]);
+
+    $sql_code = "SELECT * FROM usuario WHERE email = '$email' AND cnpj = '$cnpj'";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+
+    $quantidade = $sql_query->num_rows;
+
+    if($quantidade > 0) {
+      echo "Informações de E-mail e CNPJ já cadastrados";
+    } else {
+      $nomeEmpresa = $_POST['nomeCompleto'];
+      $email = $_POST['email'];
+      $cnpj = $_POST['cnpj'];
+      $senha = $_POST['senha'];
+
+      $sql_code = "INSERT INTO dbmeumei.usuario(nomeCompleto, email, cnpj, senha) VALUES('$nomeEmpresa', '$email', '$cnpj', '$senha')";
+      $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+
+      echo "USUÁRIO CADASTRADO COM SUCESSO!";
+    }
+
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -59,16 +96,17 @@ include("../config/conexao.php");
         <label for="textoFormulario" id="textoFormulario">Se cadastre e tenha dias com menos estresse</label>
       </div>
       <div class="mb-3">
-        <input type="text" class="inputFormulario" id="inputNomeDaEmpresa" placeholder="Nome da Empresa" />
+        <input type="text" class="inputFormulario" id="inputNomeDaEmpresa" name="nomeCompleto"
+          placeholder="Nome da Empresa" />
       </div>
       <div class="mb-3">
-        <input type="text" class="inputFormulario" id="inputEmail" placeholder="E-mail" />
+        <input type="text" class="inputFormulario" id="inputEmail" name="email" placeholder="E-mail" />
       </div>
       <div class="mb-3">
-        <input type="text" class="inputFormulario" id="inputCnpj" placeholder="CNPJ" />
+        <input type="text" class="inputFormulario" id="inputCnpj" name="cnpj" placeholder="CNPJ" />
       </div>
       <div class="mb-3">
-        <input type="password" class="inputFormulario" id="inputSenha" placeholder="Senha" />
+        <input type="password" class="inputFormulario" id="inputSenha" name="senha" placeholder="Senha" />
       </div>
       <label for="textoCadastro" id="textoCadastro">
         Ao se inscrever, você concorda com nossos
@@ -77,7 +115,7 @@ include("../config/conexao.php");
       <button type="submit" id="botaoFormulario">CADASTRE-SE</button>
       <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
       <label for="linkLogin" id="linkLogin">
-        Já tem uma conta? <a href="paginaLogin.html">Faça Login!</a>
+        Já tem uma conta? <a href="paginaLogin.php">Faça Login!</a>
       </label>
     </div>
   </form>

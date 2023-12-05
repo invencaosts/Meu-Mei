@@ -103,7 +103,7 @@ if(isset($_POST["cnpj"]) || isset($_POST["senha"])) {
       <button type="submit" id="botaoFormulario">ENTRAR</button>
       <img id="barraFormulario" src="../src/images/Line 1.svg" alt="" />
       <p id="linkLogin">
-        Ainda não tem uma conta? <a href="paginaCadastro.html">Faça o Cadastro!</a>
+        Ainda não tem uma conta? <a href="paginaCadastro.php">Faça o Cadastro!</a>
       </p>
     </div>
   </form>
