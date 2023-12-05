@@ -1,3 +1,9 @@
+<?php
+
+include("../config/protect.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -38,9 +44,12 @@
                 <img class="iconsCabecalho2" id="icon1"
                     src="../src/images/icon/auto_stories_FILL0_wght400_GRAD0_opsz24.svg"
                     alt="Icone que redireciona para a página sobre" />
-                <img class="iconsCabecalho2" id="icon2"
-                    src="../src/images/icon/account_box_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="Icone que abre uma aba de perfil" />
+                <a href="logout.php">
+                    <img class="iconsCabecalho2" id="icon2"
+                        src="../src/images/icon/account_box_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Icone que abre uma aba de perfil" />
+                </a>
+
             </div>
         </div>
     </header>
