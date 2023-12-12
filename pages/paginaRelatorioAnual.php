@@ -1,3 +1,8 @@
+<?php
+include("../config/conexao.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
