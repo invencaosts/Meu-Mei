@@ -1,6 +1,6 @@
 <?php
 
-// include("../config/protect.php");
+include("../config/protect.php");
 
 ?>
 
