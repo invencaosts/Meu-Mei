@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </head>
+
 <body class="body">
     <header class="fixarCabecalho">
         <div class="cabecalho">
@@ -27,19 +29,23 @@
                 <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
             </div>
             <div class="iconsCabecalho">
-                <img class="iconsCabecalho2" id="icon1"
-                    src="../src/images/icon/auto_stories_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="Icone que redireciona para a página sobre" />
-                <img class="iconsCabecalho2" id="icon2"
-                    src="../src/images/icon/account_box_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="Icone que abre uma aba de perfil" />
+                <a href="paginaAgradecimento.php">
+                    <img class="iconsCabecalho2" id="icon1"
+                        src="../src/images/icon/auto_stories_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Icone que redireciona para a página sobre" />
+                </a>
+                <a href="logout.php">
+                    <img class="iconsCabecalho2" id="icon2"
+                        src="../src/images/icon/account_box_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Icone que abre uma aba de perfil" />
+                </a>
             </div>
         </div>
     </header>
 
     <main>
         <div class="principal">
-           <div class="separadores"> 
+            <div class="separadores">
                 <div class="separadores-individual">
                     <img class="line1" src="../src/images/images home/Line 2.png" alt="">
                     <p class="textoSeparadores" id="rmrb">RELATÓRIO MENSAL DE RECEITAS BRUTAS</p>
@@ -52,7 +58,7 @@
                 <input id="inputPeriodo" class="inputFormulario" type="text" placeholder="PERÍODO DE APURAÇÃO">
                 <input id="inputCNPJ" class="inputFormulario" type="text" placeholder="CNPJ">
             </div>
-            <div class="separadores"> 
+            <div class="separadores">
                 <div class="separadores-individual">
                     <img class="line1" src="../src/images/images home/Line 2.png" alt="">
                     <p class="textoSeparadores" id="comercio">COMÉRCIO</p>
@@ -62,9 +68,10 @@
             <div class="campo-inputs inputs-receita">
                 <input id="inputVendasSNF1" class="inputFormulario" type="text" placeholder="VENDAS SEM NOTA FISCAL">
                 <input id="inputVendasCNF1" class="inputFormulario" type="text" placeholder="VENDAS COM NOTA FISCAL">
-                <input id="inputVendasTotal1" class="inputFormulario" type="text" placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
+                <input id="inputVendasTotal1" class="inputFormulario" type="text"
+                    placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
             </div>
-            <div class="separadores"> 
+            <div class="separadores">
                 <div class="separadores-individual">
                     <img class="line1" src="../src/images/images home/Line 2.png" alt="">
                     <p class="textoSeparadores" id="industria">INDÚSTRIA</p>
@@ -74,7 +81,8 @@
             <div class="campo-inputs inputs-receita">
                 <input id="inputVendasSNF2" class="inputFormulario" type="text" placeholder="VENDAS SEM NOTA FISCAL">
                 <input id="inputVendasCNF2" class="inputFormulario" type="text" placeholder="VENDAS COM NOTA FISCAL">
-                <input id="inputVendasT2" class="inputFormulario" type="text" placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
+                <input id="inputVendasT2" class="inputFormulario" type="text"
+                    placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
             </div>
             <div class="separadores-individual">
                 <img class="line2" src="../src/images/images home/Line 2.png" alt="">
@@ -84,14 +92,18 @@
             <div class="campo-inputs inputs-receita">
                 <input id="inputVendasSNF3" class="inputFormulario" type="text" placeholder="VENDAS SEM NOTA FISCAL">
                 <input id="inputVendasCNF3" class="inputFormulario" type="text" placeholder="VENDAS COM NOTA FISCAL">
-                <input id="inputVendasT3" class="inputFormulario" type="text" placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
+                <input id="inputVendasT3" class="inputFormulario" type="text"
+                    placeholder="TOTAL DE RECEITA OBTIDO COM TODAS AS VENDAS">
             </div>
-            <div class="group-button">     
+            <div class="group-button">
                 <button type="submit" id="botaoConfirmar">CONFIRMAR</button>
-                <button type="submit" id="botaoSalvar">SALVAR NO DRIVE <span class="material-symbols-outlined">add_to_drive</span></button>
-                <button type="submit" id="botaoCompartilhar">COMPARTILHAR <span class="material-symbols-outlined">share</span></button>
+                <button type="submit" id="botaoSalvar">SALVAR NO DRIVE <span
+                        class="material-symbols-outlined">add_to_drive</span></button>
+                <button type="submit" id="botaoCompartilhar">COMPARTILHAR <span
+                        class="material-symbols-outlined">share</span></button>
             </div>
         </div>
     </main>
 </body>
+
 </html>

@@ -2,14 +2,14 @@
 
 include("../config/conexao.php");
 
-if(isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj"]) || isset($_POST["senha"])) {
-  if(strlen($_POST["nomeCompleto"]) == 0) {
+if (isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj"]) || isset($_POST["senha"])) {
+  if (strlen($_POST["nomeCompleto"]) == 0) {
     echo "Informe o nome da empresa";
-  } else if(strlen($_POST["email"]) == 0) {
+  } else if (strlen($_POST["email"]) == 0) {
     echo "Informe seu E-mail";
-  } else if(strlen($_POST["cnpj"]) == 0) {
+  } else if (strlen($_POST["cnpj"]) == 0) {
     echo "Informe seu CNPJ";
-  } else if(strlen($_POST["senha"]) == 0) {
+  } else if (strlen($_POST["senha"]) == 0) {
     echo "Informe sua senha";
   } else {
 
@@ -19,11 +19,11 @@ if(isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj
     $senha = $mysqli->real_escape_string($_POST["senha"]);
 
     $sql_code = "SELECT * FROM usuario WHERE email = '$email' AND cnpj = '$cnpj'";
-    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
     $quantidade = $sql_query->num_rows;
 
-    if($quantidade > 0) {
+    if ($quantidade > 0) {
       echo "Informações de E-mail e CNPJ já cadastrados";
     } else {
       $nomeEmpresa = $_POST['nomeCompleto'];
@@ -32,7 +32,7 @@ if(isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj
       $senha = $_POST['senha'];
 
       $sql_code = "INSERT INTO dbmeumei.usuario(nomeCompleto, email, cnpj, senha) VALUES('$nomeEmpresa', '$email', '$cnpj', '$senha')";
-      $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+      $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
       echo "USUÁRIO CADASTRADO COM SUCESSO!";
     }
@@ -76,11 +76,11 @@ if(isset($_POST["nomeCompleto"]) || isset($_POST["email"]) || isset($_POST["cnpj
         </a>
       </div>
       <div class="botoesCabecalho">
-        <button onclick="window.location.href='../pages/paginaLogin.html';" type="submit" class="botoesCabecalhoDois"
+        <button onclick="window.location.href='paginaLogin.php';" type="submit" class="botoesCabecalhoDois"
           id="botaoLogin">
           LOGIN
         </button>
-        <button onclick="window.location.href='../pages/paginaCadastro.html';" type="submit" class="botoesCabecalhoDois"
+        <button onclick="window.location.href='paginaCadastro.php';" type="submit" class="botoesCabecalhoDois"
           id="botaoCadastro">
           CADASTRO
         </button>

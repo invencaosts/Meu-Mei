@@ -29,27 +29,29 @@
     <!-- Cabeçalho - Início -->
     <header class="fixarCabecalho">
         <div class="cabecalho">
-          <div class="logo">
-            <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
-          </div>
-          <div class="botoesCabecalho">
-            <button onclick="window.location.href='../pages/paginaLogin.html';" type="submit" class="botoesCabecalhoDois" id="botaoLogin">
-              LOGIN
-            </button>
-            <button onclick="window.location.href='../pages/paginaCadastro.html';" type="submit" class="botoesCabecalhoDois" id="botaoCadastro">
-              CADASTRO
-            </button>
-          </div>
+            <div class="logo">
+                <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
+            </div>
+            <div class="botoesCabecalho">
+                <button onclick="window.location.href='../Meu-Mei/pages/paginaLogin.php';" type="submit"
+                    class="botoesCabecalhoDois" id="botaoLogin">
+                    LOGIN
+                </button>
+                <button onclick="window.location.href='../Meu-Mei/pages/paginaCadastro.php';" type="submit"
+                    class="botoesCabecalhoDois" id="botaoCadastro">
+                    CADASTRO
+                </button>
+            </div>
         </div>
-      </header>
-      <!-- Cabeçalho - Fim -->
-  
+    </header>
+    <!-- Cabeçalho - Fim -->
+
     <main>
-    <!-- Texto Index Começo -->
+        <!-- Texto Index Começo -->
         <div class="engloba">
             <div class="texto">
                 <h2 id="h4Texto">Meu Mei é um site voltado para você!</h2 id="h4Texto">
-    
+
                 <p class="chamadaTexto">
                     📌 Você MEI que deseja evitar aquele trabalho de usar planilhas
                     online, ou até mesmo a caneta e o papel!
@@ -67,15 +69,15 @@
                     deseja não perder tanto tempo nessas atividades chatas!
             </div>
             </p>
-            
-            <div>
-                
-            </div>
-            <img class="logoGrande" src="../src/images/Logo.svg" alt="Logo grande do Meu Mei">    
-        </div>
-    <!-- Texto Index Final  -->
 
-    <!-- Carrossel Início -->
+            <div>
+
+            </div>
+            <img class="logoGrande" src="../src/images/Logo.svg" alt="Logo grande do Meu Mei">
+        </div>
+        <!-- Texto Index Final  -->
+
+        <!-- Carrossel Início -->
         <div class="carrossel">
             <div class="slides">
                 <input class="inputCarrossel" type="radio" name="slide" id="slide1" checked>
@@ -88,13 +90,13 @@
                     <img class="img" src="../src/images/Line 1.svg" alt="Imagem Carrosel">
                 </div>
             </div>
-            
+
             <div class="navigation">
                 <label class="bar" for="slide1"></label class="bar">
                 <label class="bar" for="slide2"></label>
             </div>
         </div>
-    <!-- Carrossel Final -->
+        <!-- Carrossel Final -->
     </main>
 </body>
 

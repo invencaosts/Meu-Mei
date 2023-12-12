@@ -2,11 +2,11 @@
 
 include('../config/conexao.php');
 
-if(isset($_POST["cnpj"]) || isset($_POST["senha"])) {
+if (isset($_POST["cnpj"]) || isset($_POST["senha"])) {
 
-  if(strlen($_POST["cnpj"]) == 0) {
+  if (strlen($_POST["cnpj"]) == 0) {
     echo "Preencha seu CNPJ";
-  } else if(strlen($_POST["senha"]) == 0) {
+  } else if (strlen($_POST["senha"]) == 0) {
     echo "Preencha sua senha";
   } else {
 
@@ -14,13 +14,13 @@ if(isset($_POST["cnpj"]) || isset($_POST["senha"])) {
     $senha = $mysqli->real_escape_string($_POST["senha"]);
 
     $sql_code = "SELECT * FROM usuario WHERE cnpj = '$cnpj' AND senha = '$senha'";
-    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
     $quantidade = $sql_query->num_rows;
-    if($quantidade == 1) {
+    if ($quantidade == 1) {
       $user = $sql_query->fetch_assoc();
 
-      if(!isset($_SESSION)) {
+      if (!isset($_SESSION)) {
         session_start();
       }
 
@@ -73,11 +73,11 @@ if(isset($_POST["cnpj"]) || isset($_POST["senha"])) {
         </a>
       </div>
       <div class="botoesCabecalho">
-        <button onclick="window.location.href='../pages/paginaLogin.html';" type="submit" class="botoesCabecalhoDois"
+        <button onclick="window.location.href='paginaLogin.html';" type="submit" class="botoesCabecalhoDois"
           id="botaoLogin">
           LOGIN
         </button>
-        <button onclick="window.location.href='../pages/paginaCadastro.html';" type="submit" class="botoesCabecalhoDois"
+        <button onclick="window.location.href='paginaCadastro.html';" type="submit" class="botoesCabecalhoDois"
           id="botaoCadastro">
           CADASTRO
         </button>
