@@ -1,6 +1,6 @@
 <?php
 
-include("../config/protect.php");
+// include("../config/protect.php");
 
 ?>
 
@@ -41,7 +41,7 @@ include("../config/protect.php");
                 <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
             </div>
             <div class="iconsCabecalho">
-                <a href="paginaAgradecimento.php">
+                <a href="paginaAgradecimentos.php">
                     <img class="iconsCabecalho2" id="icon1"
                         src="../src/images/icon/auto_stories_FILL0_wght400_GRAD0_opsz24.svg"
                         alt="Icone que redireciona para a página sobre" />
