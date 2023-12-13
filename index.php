@@ -52,7 +52,7 @@
         <!-- Texto Index Começo -->
         <div class="engloba">
             <div class="texto">
-                <h2 id="h4Texto">Meu Mei é um site voltado para você!</h2 id="h4Texto">
+                <h2 id="h4Texto">Meu MEI é um site voltado para você!</h2 id="h4Texto">
 
                 <p class="chamadaTexto">
                     📌 Você MEI que deseja evitar aquele trabalho de usar planilhas
@@ -78,27 +78,6 @@
             <img class="logoGrande" src="src/images/Logo.svg" alt="Logo grande do Meu Mei">
         </div>
         <!-- Texto Index Final  -->
-
-        <!-- Carrossel Início -->
-        <div class="carrossel">
-            <div class="slides">
-                <input class="inputCarrossel" type="radio" name="slide" id="slide1" checked>
-                <input class="inputCarrossel" type="radio" name="slide" id="slide2">
-
-                <div class="slide s1">
-                    <img class="img" src="src/images/images carrossel/Images Rolls.svg" alt="Imagem Carrosel">
-                </div>
-                <div class="slide">
-                    <img class="img" src="src/images/Line 1.svg" alt="Imagem Carrosel">
-                </div>
-            </div>
-
-            <div class="navigation">
-                <label class="bar" for="slide1"></label class="bar">
-                <label class="bar" for="slide2"></label>
-            </div>
-        </div>
-        <!-- Carrossel Final -->
     </main>
 </body>
 

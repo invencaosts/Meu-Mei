@@ -19,6 +19,8 @@ if (
 
     } else {
 
+        $data = date("m/Y");
+
         $nomeEmpresarial = $_POST["nomeEmpresarial"];
         $periodoApuracao = $_POST["periodoApuracao"];
         $cnpj = $_POST["cnpj"];
@@ -142,7 +144,7 @@ if (
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream();
+        $dompdf->stream($data);
     }
 }
 
