@@ -1,6 +1,4 @@
 <?php
-include("../config/protect.php");
-
 // reference the Dompdf namespace
 use Dompdf\Dompdf;
 
@@ -90,7 +88,7 @@ if (
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
   <!-- linkando CSS -->
-  <link rel="stylesheet" href="../style/cabecalho2.css" />
+  <link rel="stylesheet" href="../style/cabecalho.css" />
   <link rel="stylesheet" href="../style/paginaRelatorioAnual.css" />
   <!-- Linkando Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -101,23 +99,27 @@ if (
 </head>
 
 <body class="body">
+  <!-- Cabeçalho - Início -->
   <header class="fixarCabecalho">
     <div class="cabecalho">
       <div class="logo">
-        <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
+        <a href="../index.php">
+          <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
+        </a>
       </div>
-      <div class="iconsCabecalho">
-        <a href="paginaAgradecimentos.php">
-          <img class="iconsCabecalho2" id="icon1" src="../src/images/icon/auto_stories_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="Icone que redireciona para a página sobre" />
-        </a>
-        <a href="logout.php">
-          <img class="iconsCabecalho2" id="icon2" src="../src/images/icon/account_box_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="Icone que abre uma aba de perfil" />
-        </a>
+      <div class="botoesCabecalho">
+        <button onclick="window.location.href='../pages/paginaRelatorioMensal.php';" type="submit"
+          class="botoesCabecalhoDois" id="botaoLogin">
+          MENSAL
+        </button>
+        <button onclick="window.location.href='../pages/paginaRelatorioAnual.php';" type="submit"
+          class="botoesCabecalhoDois" id="botaoCadastro">
+          DASN
+        </button>
       </div>
     </div>
   </header>
+  <!-- Cabeçalho - Fim -->
 
   <main>
     <form action="" method="post">

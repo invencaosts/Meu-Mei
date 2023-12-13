@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../src/images/logoIcon.png" />
-    <title>Meu Mei</title>
+    <title>Meu MEI</title>
 
     <!-- Linkando Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
 
     <!-- Linkando CSS -->
-    <link rel="stylesheet" href="../style/cabecalho.css" />
-    <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/carrossel.css">
+    <link rel="stylesheet" href="style/cabecalho.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/carrossel.css">
 
     <!-- Linkando Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,16 +30,18 @@
     <header class="fixarCabecalho">
         <div class="cabecalho">
             <div class="logo">
-                <img src="../src/images/Logo.svg" alt="Logo do Meu Mei" />
+                <a href="index.php">
+                    <img src="src/images/Logo.svg" alt="Logo do Meu Mei" />
+                </a>
             </div>
             <div class="botoesCabecalho">
-                <button onclick="window.location.href='../Meu-Mei/pages/paginaLogin.php';" type="submit"
+                <button onclick="window.location.href='pages/paginaRelatorioMensal.php';" type="submit"
                     class="botoesCabecalhoDois" id="botaoLogin">
-                    LOGIN
+                    MENSAL
                 </button>
-                <button onclick="window.location.href='../Meu-Mei/pages/paginaCadastro.php';" type="submit"
+                <button onclick="window.location.href='pages/paginaRelatorioAnual.php';" type="submit"
                     class="botoesCabecalhoDois" id="botaoCadastro">
-                    CADASTRO
+                    DASN
                 </button>
             </div>
         </div>
@@ -73,7 +75,7 @@
             <div>
 
             </div>
-            <img class="logoGrande" src="../src/images/Logo.svg" alt="Logo grande do Meu Mei">
+            <img class="logoGrande" src="src/images/Logo.svg" alt="Logo grande do Meu Mei">
         </div>
         <!-- Texto Index Final  -->
 
@@ -84,10 +86,10 @@
                 <input class="inputCarrossel" type="radio" name="slide" id="slide2">
 
                 <div class="slide s1">
-                    <img class="img" src="../src/images/images carrossel/Images Rolls.svg" alt="Imagem Carrosel">
+                    <img class="img" src="src/images/images carrossel/Images Rolls.svg" alt="Imagem Carrosel">
                 </div>
                 <div class="slide">
-                    <img class="img" src="../src/images/Line 1.svg" alt="Imagem Carrosel">
+                    <img class="img" src="src/images/Line 1.svg" alt="Imagem Carrosel">
                 </div>
             </div>
 
