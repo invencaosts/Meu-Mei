@@ -57,7 +57,7 @@ Meu Mei is a website created by SENAI-SE students at the CETCC unit, for the con
 <p align="center">
   <a href="#-technologies">Technologies</a> |
   <a href="#-project">Project</a> |
-  <a href="#-layout">Layout</a> |
+  <a href="#%EF%B8%8F-layout">Layout</a> |
   <a href="#-license">License</a>
 </p>
 <br>
