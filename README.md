@@ -1,4 +1,4 @@
-<p>README.md available in English. <a href="#-meu-mei---english-version">Go To!</a></p>
+<p>README.md available in English. <a href="#meu-mei---english-version">Go To!</a></p>
 
 <h1 align="center">Meu Mei</h1>
 
