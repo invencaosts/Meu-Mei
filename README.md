@@ -1,5 +1,6 @@
+<p>README.md available in English. <a href="#-meu-mei---english-version">Go To!</a></p>
+
 <h1 align="center">Meu Mei</h1>
-<h5>README.md available in English. <a href="#-English-Version">Go To</a></h5>
 
 <p align="center">
 Meu Mei é um site criado por alunos do SENAI-SE na unidade CETCC, para a conclusão do curso Técnico em Análise e Desenvolvimento de Sistemas.
@@ -47,9 +48,7 @@ Desenvolvido por:
 
 ---
 
-## English Version
-
-<h1 align="center">Meu Mei</h1>
+<h1 align="center">Meu Mei - English Version</h1>
 
 <p align="center">
 Meu Mei is a website created by SENAI-SE students at the CETCC unit, for the conclusion of the Technical Course in Systems Analysis and Development.
